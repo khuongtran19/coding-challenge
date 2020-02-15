@@ -1,3 +1,10 @@
+//Count all characters appear in the array
+
+//the array are SORTED
+
+//Example: 
+//Input: "aaaaaa"
+//Output: "a6"
 var strComp = function (string) {
     var compressed = '';
     var currChar = '';
