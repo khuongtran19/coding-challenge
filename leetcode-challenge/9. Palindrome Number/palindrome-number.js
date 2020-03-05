@@ -26,10 +26,13 @@ var isPalindrome = function (x) {
     const original = x
     let reversed = 0
 
+    // the case when given number is single number from 0 to 9 which even the reverse. The number still the same. This case the answer always true
     if (x < 10 && x >= 0) {
         return true
     }
 
+    // case when the number is negative '-number' which when reverse will be 'number-' which always false
+    // another case is number with last digit is 0 like 10 20 30 ... . When reverse the number 0 will disappear which is why it always false.
     if (x % 10 === 0 || x < 0) {
         return false
     }

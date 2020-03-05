@@ -10,7 +10,7 @@
 //  * @return {number[]}
 //  */
 
-// #1
+// #1 simple way
 var twoSum = (nums, target) => {
     for (let i in nums) {
         for (let j in nums) {
@@ -23,6 +23,9 @@ var twoSum = (nums, target) => {
 module.exports = twoSum
 
 // #2
+// There is simple trick but will have O(n)
+// we use the the given 'target' number to subtract the nums[i] we need to find that can give us a another one which show up in the array.
+// target - nums[i] = second number we need to find that appear in array
 // var twoSum = function (nums, target) {
 //     const comp = {}
 //     for (let i in nums) {
