@@ -43,13 +43,19 @@
 //  * @param {number[][]} matrix
 //  * @return {void} Do not return anything, modify matrix in-place instead.
 //  */
+
 var rotate = function (matrix) {
+    // To solve this problem we need to look at the matrix as vertical (y) and horizontal (x) position 
     const n = matrix.length;
-    const x = Math.floor(n / 2);
-    const y = n - 1;
+    const x = Math.floor(n / 2); // x is horizontal meaning all number in the same inner array
+    const y = n - 1; // y is vertical meaning all number in same index of the array
     for (let i = 0; i < x; i++) {
         for (let j = i; j < y - i; j++) {
             k = matrix[i][j];
+            // We move one by one each number position 
+            //   _________
+            //  |         |
+            //   --5 1 9 11      move number 5 to position of number 11
             matrix[i][j] = matrix[y - j][i];
             matrix[y - j][i] = matrix[y - i][y - j];
             matrix[y - i][y - j] = matrix[j][y - i];
