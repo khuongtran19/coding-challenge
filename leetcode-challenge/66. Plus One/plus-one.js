@@ -20,14 +20,20 @@
 //  * @return {number[]}
 //  */
 var plusOne = function (digits) {
+    // The tricky of the question come from the last number we need to focus on when it equal to 9
+    // we need to add 1 to the number before the last number
+    // For example we have [1,3,4,9]
+    // the last number is 9 which mean when we add 1 it will become 10
+    // However we only can have single digit number mean 1 will left
+    // Which is will we add 1 to the number 4
     for (var i = digits.length - 1; i >= 0; i--) {
-        if (digits[i] === 9) {
-            digits[i] = 0;
-            if (i === 0) {
-                digits.unshift(1);
+        if (digits[i] === 9) { // if the last number in the array is 9
+            digits[i] = 0; //change the number to 0
+            if (i === 0) { //if the last number is 0
+                digits.unshift(1); //make the second last number to 1
                 break;
             }
-        } else {
+        } else { //if last number not 9 we will add last number in the array with 1
             digits[i]++;
             break;
         }
