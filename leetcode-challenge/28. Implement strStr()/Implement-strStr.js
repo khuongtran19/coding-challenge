@@ -6,6 +6,7 @@
 
 // Input: haystack = "hello", needle = "ll"
 // Output: 2
+
 // Example 2:
 
 // Input: haystack = "aaaaa", needle = "bba"
@@ -22,6 +23,6 @@
 //  * @return {number}
 //  */
 var strStr = function (haystack, needle) {
-    return haystack.indexOf(needle)
+    return haystack.indexOf(needle) //simple indexOf will tell where the index of the word we find
 };
 module.exports = strStr;
