@@ -47,13 +47,13 @@
 var rotate = function (matrix) {
     // To solve this problem we need to look at the matrix as vertical (y) and horizontal (x) position
     // we use matrix[x][y] to solve this problem
-    // [0,0], [0,1], [0,2], [0,3]
-    // [1,0], [1,1], [1,2], [1,3]
-    // [2,0], [2,1], [2,2], [2,3]
-    // [3,0], [3,1], [3,2], [3,3]
+    // [0,0], [0,1], [0,2], [0,3]          [ 5, 1, 9,11],
+    // [1,0], [1,1], [1,2], [1,3]    =>    [ 2, 4, 8,10],
+    // [2,0], [2,1], [2,2], [2,3]          [13, 3, 6, 7],
+    // [3,0], [3,1], [3,2], [3,3]          [15,14,12,16]
     const n = matrix.length;
     // length of each inner array in this case [5,1,9,11] => matrix.length = 4
-    // we don't know if ther problem give us more than 4 item in the inner array
+    // we don't know if the problem give us more than 4 item in the inner array
     // simply call matrix.length to let program check for us
     const x = Math.floor(n / 2);
     // x is horizontal meaning all number in the same inner array
@@ -61,6 +61,7 @@ var rotate = function (matrix) {
     // In this case it x = 4/2 = 2
     const y = n - 1;
     // y is vertical meaning all number in same index of the array
+    // In this case it y = 4-1 = 3
     for (let i = 0; i < x; i++) {
         // the i in this for loop will be all number in the inner array
         // start at position 0
@@ -72,10 +73,14 @@ var rotate = function (matrix) {
             //   _________
             //  |         |
             //   --5 1 9 11      move number 5 to position of number 11
-            matrix[i][j] = matrix[y - j][i]; // matrix[0][0] = matrix[0-1][0]
-            matrix[y - j][i] = matrix[y - i][y - j]; // 
+            matrix[i][j] = matrix[y - j][i];
+            // matrix[0][0] = matrix[3-0][0] = matrix[3][0]
+            matrix[y - j][i] = matrix[y - i][y - j];
+            // matrix[3][0] = matrix[3-0][3-0] = matrix[3][3]
             matrix[y - i][y - j] = matrix[j][y - i];
+            // matrix[3][3] = matrix[0][3-0] = matrix[0][3]
             matrix[j][y - i] = k
+            // matrix[0][3] = matrix[0][0]
         }
     }
     return matrix;
