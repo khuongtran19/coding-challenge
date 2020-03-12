@@ -39,12 +39,18 @@
 //  */
 var removeDuplicates = function (nums) {
     if (nums.length == 0)
+        // if in array there is no number
         return 0;
     let i = 0;
+    // in this problem we only need to count how many number that not repeat
+    // declare i as result number
     for (let j in nums) {
         if (nums[j] !== nums[i]) {
+            // if the number of j and i position not the same
             i++
+            // add 1 to i
             nums[i] = nums[j]
+            // move the checking position to the next number
         }
     }
     return i + 1;
