@@ -33,9 +33,10 @@ var maxProfit = function (prices) {
     for (let i = 0; i < prices.length; i++) {
         if (prices[i] > lowestPrice && (prices[i] - lowestPrice) > maxProfit) {
             // if the price is higher then the lowest price point
-            // if the max profit from the current checking price - lowestPrice larger then the previous max profit
+            // if the max profit from the current checking price - lowest price larger then the previous max profit
             maxProfit = prices[i] - lowestPrice;
         } else if (prices[i] < lowestPrice) {
+            // if current price not the lowest then change to lowest price to new current lowest price point
             lowestPrice = prices[i]
         }
     }
