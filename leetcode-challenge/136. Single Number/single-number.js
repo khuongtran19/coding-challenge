@@ -14,10 +14,10 @@
 // Input: [4,1,2,1,2]
 // Output: 4
 
-// /**
-//  * @param {number[]} nums
-//  * @return {number}
-//  */
+/**
+* @param {number[]} nums
+* @return {number}
+*/
 var singleNumber = function (nums) {
     var result = 0
     for (let i = 0; i < nums.length; i++) {
