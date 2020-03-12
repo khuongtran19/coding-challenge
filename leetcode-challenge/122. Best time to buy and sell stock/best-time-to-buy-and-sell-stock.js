@@ -29,9 +29,13 @@
 //  */
 var maxProfit = function (prices) {
     let maxprofit = 0;
+    // maxprofit as result
     for (let i in prices) {
         if (prices[i] > prices[i - 1]) {
+            // if the current price larger then the previous
             maxprofit += prices[i] - prices[i - 1];
+            // to get max profit we need to add previous profit with current profit so we can have total max profit
+            // max profit + current price - previous price
         }
     }
     return maxprofit;
