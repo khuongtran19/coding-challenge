@@ -26,7 +26,7 @@ var isPalindrome = function (x) {
     const original = x
     let reversed = 0
 
-    // the case when given number is single number from 0 to 9 which even the reverse. The number still the same. This case the answer always true
+    // the case when given number is single digit from 0 to 9 which even the reverse. The number still the same. This case the answer always true
     if (x < 10 && x >= 0) {
         return true
     }
@@ -40,6 +40,7 @@ var isPalindrome = function (x) {
     while (x !== 0) {
         reversed = reversed * 10 + x % 10
         x = Math.trunc(x / 10)
+        // Math.trunc will return an integer
     }
 
     return !(original - reversed)
