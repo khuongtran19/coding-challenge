@@ -16,6 +16,9 @@
 //  * @return {boolean}
 //  */
 var isPalindrome = function (s) {
+    // different approach on this problem
+    // we split all the words in the string then change them into lower case
+    // we also ignore the "," or ":"
     let arr = s.toLowerCase().split('').filter(a => /[a-z0-9]/i.test(a));
     return arr.join('') === arr.reverse().join('');
 };
