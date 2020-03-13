@@ -21,8 +21,12 @@
  */
 var merge = function (nums1, m, nums2, n) {
     while (n) {
-        // move all numbers from nums2 to nums 1
+        // move all numbers from nums2 to nums1
         nums1[m++] = nums2[--n]
+        // nums1 = [1, 2, 3, 0, 0, 6]
+        // nums1 = [1, 2, 3, 0, 6, 5]
+        // nums1 = [1, 2, 3, 6, 5, 2]
+        // as we only focus on merge the two array
     }
     return nums1.sort((a, b) => { return a - b })
     // sort the nums1 after merge
