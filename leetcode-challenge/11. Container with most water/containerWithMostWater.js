@@ -25,14 +25,21 @@
  */
 var maxArea = function (height) {
     let maxArea = 0, l = 0, r = height.length - 1;
+    // declare maxArea, left most height (l), right most height (r)
     while (l < r) {
+        // condition while left still smaller then right
         maxArea = Math.max(maxArea, Math.min(height[l], height[r]) * (r - l))
         if (height[l] < height[r]) {
+            // if right most height still higher then left then move on on the next left
+            // we need left most height is higher then the right
             l++;
         } else {
+            // otherwise move on on the next right most height
             r--;
         }
     }
     return maxArea
 };
+// Time complexity: O(n) single pass
+// Space comlexity: O(1) Constant space is used
 module.exports = maxArea
