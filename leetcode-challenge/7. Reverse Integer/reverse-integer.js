@@ -27,4 +27,5 @@ var reverse = function (x) {
 
     return r;
 };
+// Time complexity: O(n)
 module.exports = reverse

@@ -47,10 +47,11 @@
 var myAtoi = function (str) {
     //Math.min and Math.max were use to find if the given string is out of the range of 32-bit then return the max or min of 32-bit
     return Math.min(Math.max(str.match(/^[ ]*[+-]?[0-9]+/), -2147483648), 2147483647);
-                                    //  ^ assert position at start of the string
-                                    // [ ]* match between zero and unlimited 
-                                    // [+-] match any character in the list. In this case + or -
-                                    // [0-9] match any number in the list.
-                                    // + If match then that is result.
+    //  ^ assert position at start of the string
+    // [ ]* match between zero and unlimited 
+    // [+-] match any character in the list. In this case + or -
+    // [0-9] match any number in the list.
+    // + If match then that is result.
 };
+// Time complexity: O(n)
 module.exports = myAtoi;

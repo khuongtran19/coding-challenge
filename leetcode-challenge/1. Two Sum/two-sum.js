@@ -20,6 +20,7 @@ var twoSum = (nums, target) => {
         }
     }
 }
+// Time complexity: O(N^2)
 module.exports = twoSum
 
 // #2

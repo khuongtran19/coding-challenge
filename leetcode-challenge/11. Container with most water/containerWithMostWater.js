@@ -25,13 +25,16 @@
  */
 var maxArea = function (height) {
     let maxArea = 0, l = 0, r = height.length - 1;
-    // declare maxArea, left most height (l), right most height (r)
+    // declare maxArea, left most height (l) position, right most height (r) position
     while (l < r) {
         // condition while left still smaller then right
         maxArea = Math.max(maxArea, Math.min(height[l], height[r]) * (r - l))
+        // Math.min find which is the smaller, the height of the left or right
+        // Find the distance between the right and left side by (r - l)
+        // Multiply the minimum of the height with the distance we got the max area
+        // Math.max will find the max area between the previous max area and the current after the multiply
         if (height[l] < height[r]) {
             // if right most height still higher then left then move on on the next left
-            // we need left most height is higher then the right
             l++;
         } else {
             // otherwise move on on the next right most height
