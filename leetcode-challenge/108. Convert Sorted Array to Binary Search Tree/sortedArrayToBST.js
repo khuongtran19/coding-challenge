@@ -28,6 +28,7 @@
 function TreeNode(val) {
     this.val = val;
     this.left = this.right = null;
+    // give left and right value of null at the begining until there are assign value
 }
 // create node tree for problem
 var sortedArrayToBST = function (nums) {
