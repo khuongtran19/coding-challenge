@@ -25,6 +25,10 @@
  * @param {number[]} nums
  * @return {TreeNode}
  */
+function TreeNode(val) {
+    this.val = val;
+    this.left = this.right = null;
+}
 var sortedArrayToBST = function (nums) {
     if (nums.length === 0) {
         return null;
