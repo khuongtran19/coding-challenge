@@ -29,13 +29,15 @@ function TreeNode(val) {
     this.val = val;
     this.left = this.right = null;
 }
+// create node tree for problem
 var sortedArrayToBST = function (nums) {
     if (nums.length === 0) {
         return null;
     }
-    let middle = Math.floor(nums.length / 2);
-    let root = new TreeNode(nums[middle]);
+    let middle = Math.floor(nums.length / 2); // check the middle number
+    let root = new TreeNode(nums[middle]); // gave the function TreeNode the middle value
     root.left = sortedArrayToBST(nums.slice(0, middle));
+    // use sortedArrayToBST as the function to sort array that create a Balanced Binary Search Tree
     root.right = sortedArrayToBST(nums.slice(middle + 1));
     return root;
 };
