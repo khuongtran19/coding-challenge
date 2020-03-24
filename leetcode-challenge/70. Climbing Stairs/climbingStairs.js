@@ -24,18 +24,22 @@
  * @param {number} n
  * @return {number}
  */
+
+// Fibonacci Number solution
 var climbStairs = function (n) {
-    if (n == 1) {
+    if (n == 1) { // if there only 1 stair, there only 1 way to climb
         return 1;
     }
-    let first = 1;
-    let second = 2;
+    let first = 1; // declare 1 as we use 1 step to climb
+    let second = 2; // declare 2 as we use 2 steps to climb and there are 2 way to climb
     for (let i = 3; i <= n; i++) {
         let third = first + second;
+        // declare 3 as the sum where we start counting for steps we could take to climb
         first = second;
         second = third;
     }
     return second;
 }
-
+// Time complexity: O(n)
+// Space complexity: O(1)
 module.exports = climbStairs
