@@ -24,12 +24,19 @@ var longestCommonPrefix = function (strs) {
     // if there is no words or empty string then return empty
 
     let minLength = strs[0].length;
-    // minLength as the first letter of the word we looking
+    // minLength as the first letter of the first word we checking
+    // in the first example ["flower","flow","flight"] strs[0].length is 6 which come from the length of word "flower"
 
     // First scan: find shortest length
     for (const str of strs) {
         // check each word as "str" in the array
+        // in first example we have 3 "str" words "flower", "flow", "flight"
         if (str.length < minLength) {
+            // we need to looking for the shortest word
+            // we have first word is "flower" as the current shortest word
+            // flower
+            // flow
+            // flow <= have shorter so we have new shorest word
             minLength = str.length;
         }
     }
