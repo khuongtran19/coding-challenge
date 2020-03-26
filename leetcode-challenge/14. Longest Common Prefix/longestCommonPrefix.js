@@ -15,3 +15,28 @@
 
 // All given inputs are in lowercase letters a-z.
 
+/**
+ * @param {string[]} strs
+ * @return {string}
+ */
+var longestCommonPrefix = function (strs) {
+    if (strs.length === 0) return '';
+
+    let minLength = strs[0].length;
+    for (const str of strs) {
+        if (str.length < minLength) {
+            minLength = str.length;
+        }
+    }
+
+    for (let i = 0; i < minLength; i++) {
+        for (const str of strs) {
+            if (str[i] !== strs[0][i]) {
+                return str.substr(0, i);
+            }
+        }
+    }
+    return strs[0].substr(0, minLength);
+};
+
+module.exports = longestCommonPrefix
