@@ -28,6 +28,10 @@ var longestCommonPrefix = function (strs) {
     // in the first example ["flower","flow","flight"] strs[0].length is 6 which come from the length of word "flower"
 
     // First scan: find shortest length
+    // reason why we need to find shorest word is because we only need to find the same letter in those words so its mean the shortest will have most of the same letter
+    // fl ower
+    // fl ow <= the shortest word we can find
+    // fl ight
     for (const str of strs) {
         // check each word as "str" in the array
         // in first example we have 3 "str" words "flower", "flow", "flight"
@@ -44,6 +48,7 @@ var longestCommonPrefix = function (strs) {
     // Second scan: find common chars until a different one
     for (let i = 0; i < minLength; i++) {
         // check every letter of each word in the array
+        // using the shorstest word as the word base then compare between them
         for (const str of strs) {
             if (str[i] !== strs[0][i]) {
                 // if the letter of current checking word not same as the letter of the next word
