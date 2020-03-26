@@ -21,7 +21,9 @@
  */
 var longestCommonPrefix = function (strs) {
     if (strs.length === 0) return '';
+    // if there is no words or empty string then return empty
 
+    // First scan: find shortest length
     let minLength = strs[0].length;
     for (const str of strs) {
         if (str.length < minLength) {
@@ -29,6 +31,7 @@ var longestCommonPrefix = function (strs) {
         }
     }
 
+    // Second scan: find common chars until a differetn one
     for (let i = 0; i < minLength; i++) {
         for (const str of strs) {
             if (str[i] !== strs[0][i]) {
