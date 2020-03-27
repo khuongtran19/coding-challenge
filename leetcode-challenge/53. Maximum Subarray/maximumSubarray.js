@@ -21,7 +21,9 @@ var maxSubArray = function (nums) {
 
     for (let i = 0; i < nums.length; i++) {
         firMax = Math.max(nums[i], firMax + nums[i]);
+        // compare between the current checking number with the sum of the current number and previous number
         secMax = Math.max(firMax, secMax)
+        // compare the current and next number
     }
     return secMax
 };
