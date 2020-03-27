@@ -15,13 +15,17 @@
  */
 var maxSubArray = function (nums) {
     var firMax = nums[0];
-    var sumMax = nums[0]
+    // declare first max number
+    var secMax = nums[0];
+    // declare second max number
 
     for (let i = 0; i < nums.length; i++) {
         firMax = Math.max(nums[i], firMax + nums[i]);
-        sumMax = Math.max(firMax, sumMax)
+        secMax = Math.max(firMax, secMax)
     }
-    return sumMax
+    return secMax
 };
 
+// Time complexity: O(n)
+// Space complexity: O(1)
 module.exports = maxSubArray
