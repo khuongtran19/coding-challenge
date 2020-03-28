@@ -28,4 +28,5 @@ var reverse = function (x) {
     return r;
 };
 // Time complexity: O(n)
+// Space complexity: O(1)
 module.exports = reverse
