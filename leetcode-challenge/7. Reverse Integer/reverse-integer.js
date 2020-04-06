@@ -18,7 +18,7 @@
 //  * @return {number}
 //  */
 var reverse = function (x) {
-    if (x < 0) return -1 * reverse(-x); //if the given number is negative number then we use -1 to keep the negative. However we still use recursive to call back the function.
+    if (x < 0) return -1 * reverse(-x); //if the given number is negative number then we use -1 to keep the negative. However we use recursive to call back the function so the function can reverse the number.
     const r = parseInt(`${x}`.split('').reverse().join(''), 10);
     //from here we use normal .split .reverse and .join to reverse the number.
     //parseInt will give us integer

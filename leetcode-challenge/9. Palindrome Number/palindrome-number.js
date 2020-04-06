@@ -32,7 +32,11 @@ var isPalindrome = function (x) {
     }
 
     // case when the number is negative '-number' which when reverse will be 'number-' which always false
-    // another case is number with last digit is 0 like 10 20 30 ... . When reverse the number 0 will disappear which is why it always false.
+    // another case is number with last digit is 0 like 10 20 30 ...
+    // When reverse the number will be 1 2 3 which 0 in front should disappear mean it always false.
+    // 10 = 01 => 1
+    // 20 = 02 => 2
+    // 30 = 03 => 3
     if (x % 10 === 0 || x < 0) {
         return false
     }
