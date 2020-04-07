@@ -93,3 +93,5 @@ var intToRoman = function (num) {
     }
     return res
 };
+
+module.exports = intToRoman
