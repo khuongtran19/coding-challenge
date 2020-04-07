@@ -47,6 +47,13 @@
 var intToRoman = function (num) {
     let res = "";
     while (num > 0) {
+        // Check values in decending order from 1000 to 1
+        // use while loop for every tenfold meaning 1000, 100, 10, 1
+        // we have special charater for each of them
+        // 1000 = M
+        // 100 = C
+        // 10 = X
+        // 1 = I
         while (num >= 1000) {
             num -= 1000;
             res += "M";
