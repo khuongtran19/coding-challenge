@@ -52,13 +52,15 @@ var intToRoman = function (num) {
         // if it fit then we add character into the res
         // use subtraction toget the number and check for character
         // use while loop for every tenfold meaning 1000, 100, 10, 1
-        // because in roman those number will repeat itself when counting/
+        // because in roman those number will repeat itself when counting
         // we use while loop to count them
         // we have special charater for each of them
         // 1000 = M
         // 100 = C
         // 10 = X
         // 1 = I
+        // other case like 900, 400, 40, 4 they all have subtract by 100 10 and 1
+        // last case is 500, 50, 5 they all have other special characters D, L, V
         while (num >= 1000) {
             num -= 1000;
             res += "M";
