@@ -11,7 +11,10 @@ test.each(
         [58, "LVIII"],
         [100, "C"],
         [158, "CLVIII"],
+        [256, "CCLVI"],
+        [328, "CCCXXVIII"]
         [500, "D"],
+        [709, "DCCIX"],
         [1994, "MCMXCIV"]
     ]
 )
