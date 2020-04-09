@@ -51,6 +51,9 @@ var removeElement = function (nums, val) {
             nums.splice(i, 1)
             // we remove the number
             i--;
+            // Of course we remove the number from the array
+            // However there is case when the number is the last number which will us wrong answer when counting the length if we use splice. The index still there even there is no number.
+            // i-- will remove that number index
         }
     }
     return nums.length
