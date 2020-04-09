@@ -59,7 +59,7 @@ var removeElement = function (nums, val) {
     return nums.length
 };
 
-// #2 we can use another arra method like filter to solve this problem
+// #2 we can use another array method like filter to solve this problem
 // var removeElement = function (nums, val) {
 //     let res;
 //     for (let i = 0; i < nums.length; i++) {
