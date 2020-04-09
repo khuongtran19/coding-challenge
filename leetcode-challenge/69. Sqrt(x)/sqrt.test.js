@@ -4,7 +4,7 @@ test.each(
     [
         [8, 2],
         [9, 3],
-        [12, 6]
+        [12, 3]
     ]
 )
     ('Square root of %i is %i', (given, expected) => {

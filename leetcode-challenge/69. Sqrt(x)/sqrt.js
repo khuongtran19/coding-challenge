@@ -24,4 +24,4 @@ var mySqrt = function (x) {
     // simple solution Math.trunc for round lowest number and Math.sqrt for square root of the number
 };
 
-module.export = mySqrt
+module.exports = mySqrt
