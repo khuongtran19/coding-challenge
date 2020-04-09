@@ -43,10 +43,14 @@
  * @return {number}
  */
 var removeElement = function (nums, val) {
+    // We only need to count how many number remain after remove the element
     for (let i = 0; i < nums.length; i++) {
+        // use for loop to go through the array
         if (nums[i] === val) {
+            // if any number in the array equal to val number
             nums.splice(i, 1)
-            i--
+            // we remove the number
+            i--;
         }
     }
     return nums.length
