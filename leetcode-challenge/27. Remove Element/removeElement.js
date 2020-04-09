@@ -59,4 +59,17 @@ var removeElement = function (nums, val) {
     return nums.length
 };
 
+// #2 we can use another arra method like filter to solve this problem
+// var removeElement = function (nums, val) {
+//     let res;
+//     for (let i = 0; i < nums.length; i++) {
+//         // use for loop to go through the array
+//         if (nums[i] === val) {
+//             // if any number in the array equal to val number
+//             res = nums.filter((item) => item !== val)
+//         }
+//     }
+//     return res.length
+// };
+
 module.exports = removeElement
