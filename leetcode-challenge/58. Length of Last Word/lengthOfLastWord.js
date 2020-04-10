@@ -14,8 +14,7 @@
  * @return {number}
  */
 var lengthOfLastWord = function (s) {
-    s = " " + s.trim();
-    // add " " in front of the string
+    s = s.trim();
     // use trim to make sure there are no extra space in front of the first word or behind after last word
     return s.length - s.lastIndexOf(" ") - 1;
     // use lastIndexOf(" ") will find the last " " in the string
