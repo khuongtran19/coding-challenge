@@ -16,6 +16,8 @@
 var lengthOfLastWord = function (s) {
     s = s.trim();
     // use trim to make sure there are no extra space in front of the first word or behind after last word
+    // Example case is "        Hello       World       "
+    // when last " " index will be the last index of the string which won't have any word after
     return s.length - s.lastIndexOf(" ") - 1;
     // use lastIndexOf(" ") will find the last " " in the string
     // total - index of the last " " - 1
