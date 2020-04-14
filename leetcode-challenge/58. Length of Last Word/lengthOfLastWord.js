@@ -14,7 +14,9 @@
  * @return {number}
  */
 var lengthOfLastWord = function (s) {
-    s = s.trim();
+    s = " " + s.trim();
+    // add " " for case when there is only one word
+    // Example case is "World       "
     // use trim to make sure there are no extra space in front of the first word or behind after last word
     // Example case is "        Hello       World       "
     // when last " " index will be the last index of the string which won't have any word after
