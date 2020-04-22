@@ -1,4 +1,4 @@
-const validAnagram = require("./valid-anagram");
+const valid = require("./valid-anagram");
 
 test.each(
     [
@@ -9,5 +9,5 @@ test.each(
     ]
 )
     ('Give strings "%s" and "%s" the result should be "%s"', (givenA, givenB, expected) => {
-        expect(validAnagram(givenA, givenB)).toEqual(expected);
+        expect(valid(givenA, givenB)).toEqual(expected);
     })
