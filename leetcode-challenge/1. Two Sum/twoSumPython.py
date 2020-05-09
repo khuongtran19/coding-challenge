@@ -6,6 +6,11 @@ def twoSum(nums, target):
             h[j] = i
         else:
             return [h[n], i]
-nums = [2, 7, 11, 15]
-target = 9
+
+def test():
+    assert twoSum([2,7,11,15], 9) == [0,1]
+
+if __name__ == "__main__":
+    test()
+    print('Everything passed')
 
