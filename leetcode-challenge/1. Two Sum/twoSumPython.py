@@ -8,7 +8,7 @@ def twoSum(nums, target):
             return [h[n], i]
 
 def test():
-    assert twoSum([2,7,11,15], 9) == [0,1]
+    assert twoSum([2,7,11,15], 9) == [0,1], "Give nums = [2,7,11,15], target = 9. The result should be [0,1]"
 
 if __name__ == "__main__":
     test()
