@@ -12,10 +12,3 @@ def reverse(x):
             return 0
         else:
             return int(res)
-
-def test():
-    assert reverse(120) == 21, "Give integer 120 should be 21 after reversed"
-
-if __name__ == "__main__":
-    test()
-    print("Everything passed")

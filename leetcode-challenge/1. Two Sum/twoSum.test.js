@@ -15,3 +15,6 @@ test.each(
     ('Given nums = [%s], target = %i. Expect return [%s]', (a, b, expected) => {
         expect(twoSum(a, b)).toEqual(expected);
     })
+
+// npm run test (to run all test)
+// npm run twoSum.test.js
