@@ -6,5 +6,6 @@ Stack using for coding challenge:
 - Javascript 
 - Python
 
-USE npm run test to run all the test available for JS testing
-USE npm test <name-of-challenge> to run specific test
+
+npm run test
+npm test <name-of-challenge>
