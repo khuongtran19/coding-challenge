@@ -16,4 +16,7 @@ const pivotIndex = (arr) => {
     }
     return -1;
 };
+
+// Time complexity: O(n)
+// Space complexity: O(n)
 module.exports = pivotIndex

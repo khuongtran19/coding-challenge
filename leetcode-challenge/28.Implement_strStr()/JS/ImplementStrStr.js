@@ -17,12 +17,14 @@
 
 // For the purpose of this problem, we will return 0 when needle is an empty string. This is consistent to C's strstr() and Java's indexOf().
 
-// /**
-//  * @param {string} haystack
-//  * @param {string} needle
-//  * @return {number}
-//  */
+/**
+ * @param {string} haystack
+ * @param {string} needle
+ * @return {number}
+ */
 var strStr = function (haystack, needle) {
     return haystack.indexOf(needle) //simple indexOf will tell where the index of the word we find
 };
+// Time complexity: O(n)
+// Space complexity: O(1)
 module.exports = strStr;

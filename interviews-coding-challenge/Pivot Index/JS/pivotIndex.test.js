@@ -1,4 +1,4 @@
-const pivotIndex = require("./pivot-index");
+const pivotIndex = require("./pivotIndex");
 
 test.each(
     [

@@ -20,11 +20,12 @@ var twoSum = (nums, target) => {
         }
     }
 }
-// Time complexity: O(N^2)
+// Time complexity: O(n^2)
+// Space complexity: O(n)
 module.exports = twoSum
 
 // #2
-// There is simple trick but will have O(n)
+// There is simple trick but will have O(n) on time complexity and O(1) space complexity
 // we use the the given 'target' number to subtract the nums[i] we need to find that can give us a another one which show up in the array.
 // target - nums[i] = second number we need to find that appear in array
 // var twoSum = function (nums, target) {

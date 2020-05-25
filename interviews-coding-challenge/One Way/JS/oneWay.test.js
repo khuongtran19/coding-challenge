@@ -1,4 +1,4 @@
-const oneAway = require('./one-way')
+const oneAway = require('./oneWay')
 
 test.each(
     [
