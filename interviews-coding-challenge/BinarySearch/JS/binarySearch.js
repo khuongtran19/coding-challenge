@@ -16,3 +16,5 @@ function binarySearch(arr, val) {
     }
     return arr[m] === val ? m : -1;
 }
+
+module.exports = binarySearch
