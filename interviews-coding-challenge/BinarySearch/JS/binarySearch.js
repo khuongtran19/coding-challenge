@@ -49,6 +49,12 @@ function binarySearch(arr, val) {
         else l = m + 1;
         m = Math.floor((l + r) / 2);
     }
+    // However there are case when the number we need to find is not in the given array
+    // [1,3,4,6,8,9,11,12,15,16,17,18,19] and the number need to find is 50
+    // the while loop will keep finding new middle until it reach the number we suppose to find
+    // but the index does not change since it meet it final destination so the loop will keep going on for infinity
+    // to avoid this we need to set another codition like (l <= r)
+    // and after the condition meet the answer should be -1 since the number does not appear in the array
     return arr[m] === val ? m : -1;
 }
 
