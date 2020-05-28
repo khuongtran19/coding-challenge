@@ -65,3 +65,9 @@ calculate for time and space complexity.
 **interview-coding-challenge/ProductOfArray/JS/productOfArray.js**
 **interview-coding-challenge/Factorial/JS/factorial.js**
 **interview-coidng-challenge/Power/JS/power.js**
+
+# Binary Search
+- Rather than eliminating one element at a time, you can eliminate half of the remaining elements at a time.
+- Binary search only works on SORTED ARRAY
+**interview-coding challenge/BinarySearch/JS/binarySearch.js**
+
