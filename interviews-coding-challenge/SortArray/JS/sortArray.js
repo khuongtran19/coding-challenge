@@ -59,12 +59,16 @@ function insertionSort(arr) {
 }
 
 // Merge Sort
+// Time complexity (best)   O(nlogn)
+// Time complexity (ave)    O(nlogn)
+// Time complexity (worst)  O(nlogn)
+// Space complexity         O(1)
 function merge(a1, a2) {
     let na = [];
     let i = 0;
     let j = 0;
     while (i < a1.length && j < a2.length) {
-        if (a1[i] > a2[j]) {
+        if (a1[i] < a2[j]) {
             na.push(a1[i]);
             i++;
         } else {

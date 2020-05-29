@@ -38,7 +38,7 @@ calculate for time and space complexity.
 # Frequency Counters:
     This pattern uses objects or sets to collect values/frequencies of values. This can often avoid the need for nested loops or O(N^2) operations with array/strings
     Example challenge available in:
-**interview-coding-challenge/Same/JS/same.js**
+(../interview-coding-challenge/Same/JS/same.js)
 **leetcode-challenge/242.Valid_Anagram/JS/validAnagram.js**
 
 # Multiple pointers: 
