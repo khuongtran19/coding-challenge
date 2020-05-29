@@ -38,8 +38,8 @@ calculate for time and space complexity.
 # Frequency Counters:
     This pattern uses objects or sets to collect values/frequencies of values. This can often avoid the need for nested loops or O(N^2) operations with array/strings
     Example challenge available in:
-- [Check if array is same](../interview-coding-challenge/Same/JS/same.js)
-- [Array is valid anagram](../leetcode-challenge/242.Valid_Anagram/JS/validAnagram.js)
+- [Check if array is same](./interview-coding-challenge/Same/JS/same.js)
+- [Array is valid anagram](./leetcode-challenge/242.Valid_Anagram/JS/validAnagram.js)
 
 # Multiple pointers: 
     Creating pointers or values that correspond to and index or position and move towards the beginning, end or middle based on a certain condition. Very efficient for solving problem with minimal space complexity.
