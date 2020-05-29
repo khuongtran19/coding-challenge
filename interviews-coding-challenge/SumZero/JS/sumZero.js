@@ -16,10 +16,29 @@ const sumZero = (arr) => {
     let left = 0;
     let right = arr.length - 1;
     while (left < right) {
+        // condition where left meet right
+        // it will stop the loop if the left move to the right number position
         let sum = arr[left] + arr[right]
+        // by using the sum as already given, we can check for every numbers possible for the sum
         if (sum === 0) return [arr[left], arr[right]]
+        // if the codintion meet WE DONE
         else if (sum > 0) right--;
+        // if sum still larger then 0 then the right number which usually large number need to move to smaller number
+        // [-4, -3, -2, -1, 0, 1, 2, 5]
+        //   |                       |
+        // left                 <== right
+        // -4 + 5 = 1
         else left++;
+        // else just move to left to get move larger number from the left side
+        // [-4, -3, -2, -1, 0, 1, 2, 5]
+        //   |                    |
+        // left ==>              right
+        // -4 + 2 = -2
+        // next one will be -3
+        // -3 + 2 = -1
+        // then we get -2
+        // -2 + 2 = 0
+        // which fit the condition
     }
 }
 // Time complexity: O(n)
