@@ -1,3 +1,5 @@
+// ALL TEST USE SAME NUMBERS AND LENGTH
+
 // Bubble Sort
 // Time complexity (best)   O(n)
 // Time complexity (ave)    O(n^2)
@@ -26,17 +28,18 @@ function bubbleSort(arr) {
 // Time complexity (worst)  O(n^2)
 // Space complexity         O(1)
 function selectionSort(arr) {
-    for (var i = 0; i < arr.length; i++) {
-        var lowest = 1;
-        for (var j = i + 1; j < arr.length; j++) {
-            if (arr[j] < arr[lowest]) {
-                lowest = j;
+    let len = arr.length;
+    for (let i = 0; i < len; i++) {
+        let min = i;
+        for (let j = i + 1; j < len; j++) {
+            if (arr[min] > arr[j]) {
+                min = j;
             }
         }
-        if (i != lowest) {
-            var temp = arr[i];
-            arr[i] = arr[lowest];
-            arr[lowest] = temp;
+        if (min !== i) {
+            let tmp = arr[i];
+            arr[i] = arr[min];
+            arr[min] = tmp;
         }
     }
     return arr;
@@ -48,14 +51,17 @@ function selectionSort(arr) {
 // Time complexity (worst)  O(n^2)
 // Space complexity         O(1)
 function insertionSort(arr) {
-    for (var i = 1; i < arr.length; i++) {
-        var currentVal = arr[i];
-        for (var j = i + 1; j >= 0 && arr[j] > currentVal; j--) {
-            arr[j + 1] = arr[i];
+    let length = arr.length;
+    for (let i = 1; i < length; i++) {
+        let key = arr[i];
+        let j = i - 1;
+        while (j >= 0 && arr[j] > key) {
+            arr[j + 1] = arr[j];
+            j = j - 1;
         }
-        arr[j + 1] = currentVal
+        arr[j + 1] = key;
     }
-    return arr
+    return arr;
 }
 
 // Merge Sort
@@ -158,16 +164,16 @@ function mostDigit(nums) {
     return maxDigits;
 }
 function radisSort(arr) {
-    let maxDigitCount = mostDigit(nums);
+    let maxDigitCount = mostDigit(arr);
     for (let k = 0; k < maxDigitCount; k++) {
         let digitBuckets = Array.from({ length: 10 }, () => [])
-        for (let i = 0; i < nums.length; i++) {
-            let digit = getDigit(nums[i], k);
-            digitBuckets[digit].push(nums[i])
+        for (let i = 0; i < arr.length; i++) {
+            let digit = getDigit(arr[i], k);
+            digitBuckets[digit].push(arr[i])
         }
-        nums = [].concat(...digitBuckets)
+        arr = [].concat(...digitBuckets)
     }
-    return nums
+    return arr
 }
 
 module.exports.bubbleSort = bubbleSort;
