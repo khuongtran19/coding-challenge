@@ -177,6 +177,44 @@ function quickSort(arr, left = 0, right = arr.length - 1) {
 // Space complexity         O(n + k)
 // n - length of the array
 // k - number of digits (average)
+// create a table from 0 - 9.
+// given the array [ 1423, 32345, 4, 343, 78, 990, 1332]
+//  0 | 1 | 2 | 3 | 4 |    5 | 6 | 7 | 8 | 9 |
+//990    1332 343   4  32345          78
+//           1423      
+// [990, 1332, 343, 1423, 4, 32345, 78] <- new array after set them following table
+
+// we keep checking with decimal
+// xxx_x
+// 0 | 1 | 2 |  3 |  4 | 5 | 6 | 7 | 8 | 9 |
+// 4     1423 1332  343          78     990
+//                32345
+// [4, 1423, 1332, 343, 32345, 78, 990]
+
+// xx_xx
+//  0  | 1 | 2 | 3 |  4 | 5 | 6 | 7 | 8 | 9 |
+//    4          343 1423                990
+//   78         1332
+//             32345    
+// [4, 78, 343, 1332, 32345, 1423, 990]
+
+// x_xxx
+// 0   | 1    | 2 | 3 |  4 | 5 | 6 | 7 | 8 | 9 |
+//    4  1332  32345                      
+//   78  1423
+//  343
+//  990            
+// [4, 78, 343, 990, 1332, 1423, 32345]
+
+
+// 0    | 1 | 2 | 3 |  4 | 5 | 6 | 7 | 8 | 9 |
+//     4          32345                       
+//    78
+//   343
+//   990
+//  1332
+//  1423
+// [4, 78, 343, 990, 1332, 1423, 32345]
 function getDigit(num, i) {
     return Math.floor(Math.abs(num) / Math.pow(10, i)) % 10;
 }
