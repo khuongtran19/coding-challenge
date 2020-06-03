@@ -169,3 +169,12 @@ function radisSort(arr) {
     }
     return nums
 }
+
+module.exports = {
+    bubbleSort: bubbleSort,
+    selectionSort: selectionSort,
+    insertionSort: insertionSort,
+    mergeSort: mergeSort,
+    quickSort: quickSort,
+    radisSort: radisSort
+}
