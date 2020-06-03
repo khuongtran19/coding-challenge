@@ -5,6 +5,11 @@
 // Time complexity (ave)    O(n^2)
 // Time complexity (worst)  O(n^2)
 // Space complexity         O(1) 
+// [2, 4, 1, 5, 3, 7, 8, 6, 9] 
+//     |  |  |  |     |  |    <- switch between the current number and next number by compare them
+// [2, 1, 4, 3, 5, 7, 6, 8, 9]
+//  |  |  |  |     |  |    
+// [1, 2, 3, 4, 5, 6, 7, 8, 9]
 function bubbleSort(arr) {
     let len = arr.length;
     let swapped;
@@ -27,6 +32,11 @@ function bubbleSort(arr) {
 // Time complexity (ave)    O(n^2)
 // Time complexity (worst)  O(n^2)
 // Space complexity         O(1)
+// [2, 4, 1, 5, 3, 7, 8, 6, 9]
+//        |  <- first lowest number
+// [1, 4, 2, 5, 3, 7, 8, 6, 9] <- switch the lowest number with the first number location
+//   [ 4, 2, 5, 3, 7, 8, 6, 9] <- check next lowest number than compare and swap
+//        |  <- new lowest number
 function selectionSort(arr) {
     let len = arr.length;
     for (let i = 0; i < len; i++) {
@@ -50,6 +60,13 @@ function selectionSort(arr) {
 // Time complexity (ave)    O(n^2)
 // Time complexity (worst)  O(n^2)
 // Space complexity         O(1)
+// [2, 4, 1, 5, 3, 7, 8, 6, 9]
+//        |  <- current number since it the lowest number from index 0 - current position
+// [1, 2, 4, 5, 3, 7, 8, 6, 9] <- swap between first number to the current take out number
+//              | <- new current number
+// [1, 2, 3, 4, 5, 7, 8, 6, 9] <- swap between the current number with larger number
+//                       | <- next new current number
+// [1, 2, 3, 4, 5, 6, 7, 8, 9]
 function insertionSort(arr) {
     let length = arr.length;
     for (let i = 1; i < length; i++) {
