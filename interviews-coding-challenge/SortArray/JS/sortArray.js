@@ -4,20 +4,20 @@
 // Time complexity (worst)  O(n^2)
 // Space complexity         O(1) 
 function bubbleSort(arr) {
-    var noSwaps;
-    for (var i = arr.length; i > 0; i--) {
-        noSwaps = true;
-        for (var j = 0; j < i - 1; j++) {
-            if (arr[j] > arr[j + 1]) {
-                var temp = arr[i];
-                arr[i] = arr[j];
-                arr[j] = temp;
-                noSwaps = false;
+    let len = arr.length;
+    let swapped;
+    do {
+        swapped = false;
+        for (let i = 0; i < len; i++) {
+            if (arr[i] > arr[i + 1]) {
+                let tmp = arr[i];
+                arr[i] = arr[i + 1];
+                arr[i + 1] = tmp;
+                swapped = true;
             }
         }
-        if (noSwaps) break;
-    }
-    return arr
+    } while (swapped);
+    return arr;
 }
 
 // Selection Sort
