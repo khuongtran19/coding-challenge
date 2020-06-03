@@ -10,7 +10,7 @@ Run Javascript testing challenge
 - npm run test
 - npm test <name-of-challenge>
 
-![Image of Complexity](/complexity.png)
+![Image of Complexity](/TimeComplexity.jpeg)
 
 calculate for time and space complexity.
 # Time Complexity:
@@ -36,18 +36,18 @@ calculate for time and space complexity.
 
 
 # Frequency Counters:
-- This pattern uses objects or sets to collect values/frequencies of values. This can often avoid the need for nested loops or O(N^2) operations with array/strings
+This pattern uses objects or sets to collect values/frequencies of values. This can often avoid the need for nested loops or O(N^2) operations with array/strings
 **Example:**
 - [Check if array is same](https://github.com/khuongtran19/coding-challenge/blob/master/interviews-coding-challenge/Same/JS/same.js)
 - [Array is valid anagram](https://github.com/khuongtran19/coding-challenge/blob/master/leetcode-challenge/242.Valid_Anagram/JS/validAnagram.js)
 
 # Multiple pointers: 
-- Creating pointers or values that correspond to and index or position and move towards the beginning, end or middle based on a certain condition. Very efficient for solving problem with minimal space complexity.
+Creating pointers or values that correspond to and index or position and move towards the beginning, end or middle based on a certain condition. Very efficient for solving problem with minimal space complexity.
 **Example:**
 - [Sum Zero](https://github.com/khuongtran19/coding-challenge/blob/master/interviews-coding-challenge/SumZero/JS/sumZero.js)
 
 # Sliding window:
-- This pattern involves creating a window which can either be an array or number from one position to another. Depending on a certain condition, the window either increases or closes (and a new window is created). Very useful for keeping track of a subset of data in an array/string etc.
+This pattern involves creating a window which can either be an array or number from one position to another. Depending on a certain condition, the window either increases or closes (and a new window is created). Very useful for keeping track of a subset of data in an array/string etc.
 **Example:**
 - [Max Subarray Sum](https://github.com/khuongtran19/coding-challenge/blob/master/interviews-coding-challenge/MaxSum/JS/maxSubarraySum.js)
 - [Min Sub Array ](https://github.com/khuongtran19/coding-challenge/blob/master/interviews-coding-challenge/MinSubArray/JS/minSubArray.js)
@@ -59,22 +59,22 @@ This pattern can tremendously decrease time complexity
 - [Sort](https://github.com/khuongtran19/coding-challenge/blob/master/interviews-coding-challenge/Sort/JS/sort.js)
 
 # Recurtion Tips
-- For arrays, use methods like slice, the spread operator, and concat that make copies of arrays so you do not mutate them.
-- Remember that string are immutable so you will need to use methods like slice, subtr, or substring to make copies of strings
-- To make copies of objects use Objects.assign, or the spread operator
+For arrays, use methods like slice, the spread operator, and concat that make copies of arrays so you do not mutate them.
+Remember that string are immutable so you will need to use methods like slice, subtr, or substring to make copies of strings
+To make copies of objects use Objects.assign, or the spread operator
 **Example:**
 - [Product of Array](https://github.com/khuongtran19/coding-challenge/blob/master/interviews-coding-challenge/ProductOfArray/JS/productOfArray.js)
 - [Factorial](https://github.com/khuongtran19/coding-challenge/blob/master/interviews-coding-challenge/Factorial/JS/factorial.js)
 - [Power](https://github.com/khuongtran19/coding-challenge/blob/master/interviews-coding-challenge/Power/JS/power.js)
 
 # Binary Search
-- Rather than eliminating one element at a time, you can eliminate half of the remaining elements at a time.
-- Binary search only works on SORTED ARRAY
+Rather than eliminating one element at a time, you can eliminate half of the remaining elements at a time.
+Binary search only works on SORTED ARRAY
 **Example:**
 - [Binary Search](https://github.com/khuongtran19/coding-challenge/blob/master/interviews-coding-challenge/BinarySearch/JS/binarySearch.js)
 
 # Sort
-- There are 8 type of sort algorithms according [toptal.com](https://www.toptal.com/developers/sorting-algorithms):
+There are 8 type of sort algorithms according [toptal.com](https://www.toptal.com/developers/sorting-algorithms):
     - Insertion
     - Selection
     - Bubble
@@ -83,7 +83,9 @@ This pattern can tremendously decrease time complexity
     - Heap
     - Quick
     - Quick 3
+Depend on problem, each algorithm will give different pros and cons between time and space complexity. However **Quick Sort** consider as the best one on time complexity performence since it O(n log n) in best and average case, and O(n^2) in the worst case
 **Example:**
-- [Sort Array Algorithm](https://github.com/khuongtran19/coding-challenge/blob/master/interviews-coding-challenge/SortArray/JS/sortArray.js)
+- [Sort Algorithm](https://github.com/khuongtran19/coding-challenge/blob/master/interviews-coding-challenge/SortArray/JS/sortArray.js)
+- [More Info on Sort Algorithm](https://github.com/khuongtran19/coding-challenge/blob/master/interviews-coding-challenge/SortArray/JS/sortAlgorithm.md)
 
 
