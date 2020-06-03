@@ -86,6 +86,17 @@ function insertionSort(arr) {
 // Time complexity (ave)    O(nlogn)
 // Time complexity (worst)  O(nlogn)
 // Space complexity         O(1)
+// [2, 4, 1, 5, 3, 7, 8, 6, 9]
+// seperate numbers into new arr, each contain single number
+// [2], [4], [1], [5], [3], [7], [8], [6], [9]
+//  ------    ------    ------    ------
+// compare between those then add then to new arr, we have
+// [2, 4], [1, 5], [3, 7], [6, 8], [9]
+//  ------------    ------------
+// compare a new group we have
+// [1, 2, 4, 5], [3, 6, 7, 8], [9]
+// then we compare the rest
+// [1, 2, 3, 4, 5, 6, 7, 8, 9] 
 function merge(a1, a2) {
     let na = [];
     let i = 0;
