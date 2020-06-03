@@ -170,11 +170,9 @@ function radisSort(arr) {
     return nums
 }
 
-module.exports = {
-    bubbleSort: bubbleSort,
-    selectionSort: selectionSort,
-    insertionSort: insertionSort,
-    mergeSort: mergeSort,
-    quickSort: quickSort,
-    radisSort: radisSort
-}
+module.exports.bubbleSort = bubbleSort;
+module.exports.selectionSort = selectionSort;
+module.exports.insertionSort = insertionSort;
+module.exports.quickSort = quickSort;
+module.exports.mergeSort = mergeSort;
+module.exports.radisSort = radisSort;
