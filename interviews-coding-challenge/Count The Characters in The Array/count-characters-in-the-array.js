@@ -29,5 +29,7 @@ const strComp = function (string) {
     maxCount = Math.max(maxCount, currCount);
 
     return maxCount === 1 ? string : compressed;
+    // short cut for if state as it mean if macCount equal to 1 then return string
+    // otherwise return compressed
 };
 module.exports = strComp  
