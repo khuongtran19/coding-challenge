@@ -1,3 +1,15 @@
+// get different between 2 objects
+// Object1 = {
+//     "name" : "Adam",
+//     "age" : 9, 
+//     "gender" : "male"
+// }
+// Object2 = {
+//     "name" : "Adam",
+//     "age" : 9,
+//     "hobit" : "soccer"
+// }
+// Output: {gender : "male", hobit : "soccer"}
 const getDifferent = (obj1, obj2) => {
     let diffs = []
     let newObj1 = {}
@@ -17,7 +29,6 @@ const getDifferent = (obj1, obj2) => {
             diffs.push(newObj2)
         }
     }
-    console.log(diffs)
     return diffs
 }
 

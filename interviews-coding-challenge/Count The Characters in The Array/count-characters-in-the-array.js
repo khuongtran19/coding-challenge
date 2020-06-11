@@ -5,6 +5,8 @@
 //Example: 
 //Input: "aaaaaa"
 //Output: "a6"
+//Input: "aaabbbbbbcccc"
+//Output: "a3b5c4"
 const strComp = function (string) {
     let compressed = '';
     // declare compressed which store the characters and it count
@@ -18,7 +20,9 @@ const strComp = function (string) {
     for (let i = 0; i < string.length; i++) {
         if (currChar !== string[i]) {
             compressed = compressed + currChar + currCount;
+            // as the problem was given we have something like "a3b5c4" mean we add all current and new characters and count together
             maxCount = Math.max(maxCount, currCount);
+            // instead of using if statement we can use Math.max to replace current count as max count
             currChar = string[i];
             currCount = 1;
         } else {
