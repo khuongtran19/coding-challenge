@@ -169,7 +169,6 @@ function quickSort(arr, left = 0, right = arr.length - 1) {
     return arr;
 }
 
-// SPECIAL CASE
 // Radis Sort
 // Time complexity (best)   O(nk)
 // Time complexity (ave)    O(nk)
@@ -178,27 +177,29 @@ function quickSort(arr, left = 0, right = arr.length - 1) {
 // n - length of the array
 // k - number of digits (average)
 // create a table from 0 - 9.
-// given the array [ 1423, 32345, 4, 343, 78, 990, 1332]
+
+// [ 1423, 32345, 4, 343, 78, 990, 1332]
+
+// xxxx_ check the first digit
 //  0 | 1 | 2 | 3 | 4 |    5 | 6 | 7 | 8 | 9 |
 //990    1332 343   4  32345          78
 //           1423      
 // [990, 1332, 343, 1423, 4, 32345, 78] <- new array after set them following table
 
-// we keep checking with decimal
-// xxx_x
+// xxx_x we keep checking with second digit
 // 0 | 1 | 2 |  3 |  4 | 5 | 6 | 7 | 8 | 9 |
 // 4     1423 1332  343          78     990
 //                32345
 // [4, 1423, 1332, 343, 32345, 78, 990]
 
-// xx_xx
+// xx_xx third digit
 //  0  | 1 | 2 | 3 |  4 | 5 | 6 | 7 | 8 | 9 |
 //    4          343 1423                990
 //   78         1332
 //             32345    
 // [4, 78, 343, 1332, 32345, 1423, 990]
 
-// x_xxx
+// x_xxx fourth digit
 // 0   | 1    | 2 | 3 |  4 | 5 | 6 | 7 | 8 | 9 |
 //    4  1332  32345                      
 //   78  1423
@@ -206,7 +207,7 @@ function quickSort(arr, left = 0, right = arr.length - 1) {
 //  990            
 // [4, 78, 343, 990, 1332, 1423, 32345]
 
-
+// _xxxx fifth digit
 // 0    | 1 | 2 | 3 |  4 | 5 | 6 | 7 | 8 | 9 |
 //     4          32345                       
 //    78
@@ -232,7 +233,7 @@ function mostDigit(nums) {
 function radisSort(arr) {
     let maxDigitCount = mostDigit(arr);
     for (let k = 0; k < maxDigitCount; k++) {
-        let digitBuckets = Array.from({ length: 10 }, () => [])
+        let digitBuckets = Array.from({ length: 10 }, () => []) // create table from 0 - 9
         for (let i = 0; i < arr.length; i++) {
             let digit = getDigit(arr[i], k);
             digitBuckets[digit].push(arr[i])

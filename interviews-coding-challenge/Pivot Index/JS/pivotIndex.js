@@ -14,7 +14,7 @@ const pivotIndex = (arr) => {
         }
         left += arr[i]; //as left start at 0 add left and next possible pivot number then count until left and right equal 
     }
-    return -1;
+    return -1; // in case there is no pivot found return -1 as result
 };
 
 // Time complexity: O(n)

@@ -10,4 +10,7 @@ const checkPermute = function (stringOne, stringTwo) {
         return sortedStringOne === sortedStringTwo;
     }
 }
+
+// Time complexity: O(nlogn) due to .sort() method
+// Space complexity: O(n)
 module.exports = checkPermute
