@@ -9,7 +9,7 @@
 //     "age" : 9,
 //     "hobit" : "soccer"
 // }
-// Output: {gender : "male", hobit : "soccer"}
+// Output: [{gender : "male"},{ hobit : "soccer"}]
 const getDifferent = (obj1, obj2) => {
     let diffs = []
     let newObj1 = {}
