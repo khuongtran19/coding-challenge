@@ -5,12 +5,17 @@
 //Example: 
 //Input: "aaaaaa"
 //Output: "a6"
-var strComp = function (string) {
-    var compressed = '';
-    var currChar = '';
-    var currCount = '';
-    var maxCount = 1;
-    for (var i = 0; i < string.length; i++) {
+const strComp = function (string) {
+    let compressed = '';
+    // declare compressed which store the characters and it count
+    let currChar = '';
+    // current character we checking
+    let currCount = '';
+    // current count of the character we checking
+    let maxCount = 1;
+    // maxCount will count how many times the character repeat
+    // start with 1 as we current checking the first character
+    for (let i = 0; i < string.length; i++) {
         if (currChar !== string[i]) {
             compressed = compressed + currChar + currCount;
             maxCount = Math.max(maxCount, currCount);
