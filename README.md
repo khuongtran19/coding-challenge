@@ -53,14 +53,14 @@ This pattern involves creating a window which can either be an array or number f
 - [Min Sub Array ](https://github.com/khuongtran19/coding-challenge/blob/master/interviews-coding-challenge/MinSubArray/JS/minSubArray.js)
 
 # Divide and Conquer
-This pattern involves dividing a data set into smaller chunks and then repeating a process with a subnet of data.
+This pattern involves dividing a data set into smaller chunks and then repeating a process with a subnet of data.\
 This pattern can tremendously decrease time complexity.\
 **Example:**
 - [Sort](https://github.com/khuongtran19/coding-challenge/blob/master/interviews-coding-challenge/Sort/JS/sort.js)
 
 # Recurtion Tips
-For arrays, use methods like slice, the spread operator, and concat that make copies of arrays so you do not mutate them.
-Remember that string are immutable so you will need to use methods like slice, subtr, or substring to make copies of strings
+For arrays, use methods like slice, the spread operator, and concat that make copies of arrays so you do not mutate them.\
+Remember that string are immutable so you will need to use methods like slice, subtr, or substring to make copies of strings.\
 To make copies of objects use Objects.assign, or the spread operator.\
 **Example:**
 - [Product of Array](https://github.com/khuongtran19/coding-challenge/blob/master/interviews-coding-challenge/ProductOfArray/JS/productOfArray.js)
@@ -136,7 +136,7 @@ null|3|->   3|5|->      5|19|->     19|4|null
 **Compare between Single and Double Linked List**
 - They are almost identical except there is an additional pointer to previous nodes.
 - Double Linked List better than Singly Linked Lists for finding nodes and can be done in half the time.
-- However, they do take up moer memory considering the extra pointer.
+- However, they do take up more memory considering the extra pointer.
 
 # STACKS
 A LIFO (Last In First Out) data structure. The last element added to the stack will be the first element removed from the stack.\
