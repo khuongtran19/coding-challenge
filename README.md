@@ -138,17 +138,17 @@ null|3|->   3|5|->      5|19|->     19|4|null
 - Double Linked List better than Singly Linked Lists for finding nodes and can be done in half the time.
 - However, they do take up moer memory considering the extra pointer.
 
-#STACKS
-- A LIFO (Last In First Out) data structure. The last element added to the stack will be the first element removed from the stack.
-- Think about a stack of plates as you pile it up the last thing is what gets removed first.\
+# STACKS
+A LIFO (Last In First Out) data structure. The last element added to the stack will be the first element removed from the stack.\
+Think about a stack of plates as you pile it up the last thing is what gets removed first.\
 Stacks are used:
  + Managing function.
  + Undo/Redo
  + Routing (the history object is treated like a stack)
 [Stacks](https://github.com/khuongtran19/coding-challenge/blob/master/Stacks.js)
 
- #QUEUE
- - A FIFO (First In First Out) data structure.\
+# QUEUE
+A FIFO (First In First Out) data structure.\
 Queue are used:
  + Background tasks
  + Uploading resources
