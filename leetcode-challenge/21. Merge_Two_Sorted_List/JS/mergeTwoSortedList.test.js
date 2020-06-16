@@ -1,5 +1,5 @@
 const mergeTwoSortedList = require("./mergeTwoSortedList")
-const Node = require('../../../linkedlist');
+const Node = require('../../../NodeSinglyLinkedList');
 
 const list1 = new Node(1);
 list1.next = new Node(2);

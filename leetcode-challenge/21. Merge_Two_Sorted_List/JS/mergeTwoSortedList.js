@@ -1,4 +1,4 @@
-const Node = require('../../../linkedlist')
+const Node = require('../../../NodeSinglyLinkedList')
 /**
  * @param {ListNode} l1
  * @param {ListNode} l2

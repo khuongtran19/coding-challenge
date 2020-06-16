@@ -1,4 +1,4 @@
-const Node = require('../../../linkedlist')
+const Node = require('../../../NodeSinglyLinkedList')
 
 var addTwoNumbers = function (l1, l2) {
     let List = new Node(0);

@@ -1,5 +1,5 @@
 const addTwoNumbers = require("./addTwoNumbers")
-const Node = require('../../../linkedlist')
+const Node = require('../../../NodeSinglyLinkedList')
 
 const list1 = new Node(2)
 list1.next = new Node(4)
