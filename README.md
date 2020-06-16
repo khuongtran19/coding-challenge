@@ -144,7 +144,9 @@ Think about a stack of plates as you pile it up the last thing is what gets remo
 Stacks are used:
  + Managing function.
  + Undo/Redo
- + Routing (the history object is treated like a stack)
+ + Routing (the history object is treated like a stack)\
+
+**Example:**
 [Stacks](https://github.com/khuongtran19/coding-challenge/blob/master/Stacks.js)
 
 # QUEUE
@@ -153,3 +155,6 @@ Queue are used:
  + Background tasks
  + Uploading resources
  + Printing / Task Processing
+
+**Example:**
+[Queue](https://github.com/khuongtran19/coding-challenge/blob/master/Queue.js)
