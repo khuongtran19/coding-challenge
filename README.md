@@ -117,7 +117,7 @@ Each Node carry 2 thing: value and next.\
 - Value is the number or character or word we provide
 - Next is where we store value that come after the current value.\
 
-- [Single Linked List](https://github.com/khuongtran19/coding-challenge/blob/master/Singly_Linked_List.js)
+- [Single Linked List](https://github.com/khuongtran19/coding-challenge/blob/master/Example/Singly_Linked_List.js)
 
 # Doubly Linked List
 ![Doubly Linked List](/Doubly_Linked_List.png)
@@ -131,7 +131,7 @@ null|3|->   3|5|->      5|19|->     19|4|null
      |                                  |
      head                             tail
 
-- [Double Linked List](https://github.com/khuongtran19/coding-challenge/blob/master/Double_Linked_List.js)
+- [Double Linked List](https://github.com/khuongtran19/coding-challenge/blob/master/Example/Double_Linked_List.js)
 
 **Compare between Single and Double Linked List**
 - They are almost identical except there is an additional pointer to previous nodes.
