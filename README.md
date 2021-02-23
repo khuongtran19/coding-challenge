@@ -10,8 +10,6 @@ Run Javascript testing challenge
 - npm run test
 - npm test <name-of-challenge>
 
-![Image of Complexity](/TimeComplexity.jpeg)
-
 calculate for time and space complexity.
 # Time Complexity:
     .push()                         O(1)

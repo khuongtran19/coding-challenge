@@ -38,15 +38,5 @@ var lengthOfLongestSubstring = function (s) {
         return 0;
     }
     let longest = 1;
-    for (let i = 1; i < s.length; i++) {
-        const curr = s[0].indexOf(s[i]);
-        if (curr > -1) {
-            s[0] = s[0].slice(curr + 1);
-        }
-        s[0] += s[i];
-        if (s[0] > longest) {
-            longest = s[0].length;
-        }
-    }
-    return longest;
+
 }
