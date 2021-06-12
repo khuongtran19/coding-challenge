@@ -40,3 +40,4 @@ var lengthOfLongestSubstring = function (s) {
     let longest = 1;
 
 }
+module.exports = lengthOfLongestSubstring

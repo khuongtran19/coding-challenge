@@ -1,4 +1,4 @@
-const longestSub = require("./reverseInteger");
+const longestSub = require("./longestSubstringWithoutRepeatingCharacters");
 
 test.each(
     [
