@@ -10,8 +10,6 @@
 // Share
 // Given a string s, find the length of the longest substring without repeating characters.
 
-
-
 // Example 1:
 
 // Input: s = "abcabcbb"
@@ -34,10 +32,14 @@
 // Output: 0
 
 var lengthOfLongestSubstring = function (s) {
-    if (!s) {
-        return 0;
+    let max = 0, pos = 0, map = new Map()
+    for (let i = 0; i < s.length; i++) {
+        if (map.has(s[i])) {
+            pos = Math.max(map.get(s[i]), pos);
+        }
+        max = Math.max(max, i - pos + 1)
+        map.set(s[i], i + 1);
     }
-    let longest = 1;
-
+    return max;
 }
 module.exports = lengthOfLongestSubstring
