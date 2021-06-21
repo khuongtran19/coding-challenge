@@ -63,8 +63,6 @@ function minimumSwaps(arr) {
         if (arr[i] != i + 1) {
             while (arr[i] != i + 1) {
                 let temp = 0
-                console.log(arr[arr[i] - 1])
-                console.log(arr[i])
                 temp = arr[arr[i] - 1]
                 arr[arr[i] - 1] = arr[i]
                 arr[i] = temp
