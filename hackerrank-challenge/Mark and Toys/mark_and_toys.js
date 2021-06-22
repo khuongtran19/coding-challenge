@@ -36,3 +36,22 @@
 // Explanation
 
 // He can buy only 4 toys at most. These toys have the following prices: [1,12,5,10].
+
+function maximumToys(prices, k) {
+    let sum = 0;
+    let sorter = prices.sort((a, b) => a - b);
+    // This sort out ascending of array
+    let counter = 0
+
+    for (var i = 0; i < sorter.length; i++) {
+        if (sorter[i] < k) {
+            sum += sorter[i]
+            if (sum <= k) {
+                counter++
+            }
+        }
+    }
+    return counter
+}
+
+module.exports = maximumToys
