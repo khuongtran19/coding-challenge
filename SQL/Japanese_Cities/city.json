@@ -1,0 +1,582 @@
+[
+    {
+        "ID": 6,
+        "NAME": "Rotterdam",
+        "COUNTYCODE": "NLD",
+        "DISTRICT": "Zuid-Holland",
+        "POPULATION": 593321
+    },
+    {
+        "ID": 19,
+        "NAME": "Zaanstad",
+        "COUNTYCODE": "NLD",
+        "DISTRICT": "Noord-Holland",
+        "POPULATION": 135621
+    },
+    {
+        "ID": 214,
+        "NAME": "Porto Alegre",
+        "COUNTYCODE": "BRA",
+        "DISTRICT": "Rio Grande do Sul",
+        "POPULATION": 1314032
+    },
+    {
+        "ID": 397,
+        "NAME": "Lauro de Freitas",
+        "COUNTYCODE": "BRA",
+        "DISTRICT": "Bahia",
+        "POPULATION": 109236
+    },
+    {
+        "ID": 547,
+        "NAME": "Dobric",
+        "COUNTYCODE": "BGR",
+        "DISTRICT": "Varna",
+        "POPULATION": 100399
+    },
+    {
+        "ID": 552,
+        "NAME": "Bujumbura",
+        "COUNTYCODE": "BDI",
+        "DISTRICT": "Bujumbura",
+        "POPULATION": 300000
+    },
+    {
+        "ID": 554,
+        "NAME": "Santiago de Chile",
+        "COUNTYCODE": "CHL",
+        "DISTRICT": "Santiago",
+        "POPULATION": 4703954
+    },
+    {
+        "ID": 626,
+        "NAME": "al-Minya",
+        "COUNTYCODE": "EGY",
+        "DISTRICT": "al-Minya",
+        "POPULATION": 201360
+    },
+    {
+        "ID": 646,
+        "NAME": "Santa Ana",
+        "COUNTYCODE": "SLV",
+        "DISTRICT": "Santa Ana",
+        "POPULATION": 139389
+    },
+    {
+        "ID": 762,
+        "NAME": "Bahir Dar",
+        "COUNTYCODE": "ETH",
+        "DISTRICT": "Amhara",
+        "POPULATION": 96140
+    },
+    {
+        "ID": 796,
+        "NAME": "Baguio",
+        "COUNTYCODE": "PHL",
+        "DISTRICT": "CAR",
+        "POPULATION": 252386
+    },
+    {
+        "ID": 896,
+        "NAME": " Malungon",
+        "COUNTYCODE": "PHL",
+        "DISTRICT": "Southern Mindanao",
+        "POPULATION": 93232
+    },
+    {
+        "ID": 904,
+        "NAME": "Banjul",
+        "COUNTYCODE": "GMB",
+        "DISTRICT": "Banjul",
+        "POPULATION": 42326
+    },
+    {
+        "ID": 924,
+        "NAME": "Villa Nueva",
+        "COUNTYCODE": "GTM",
+        "DISTRICT": "Guatemala",
+        "POPULATION": 101295
+    },
+    {
+        "ID": 990,
+        "NAME": "Waru",
+        "COUNTYCODE": "IDN",
+        "DISTRICT": "East Java",
+        "POPULATION": 124300
+    },
+    {
+        "ID": 1155,
+        "NAME": "Latur",
+        "COUNTYCODE": "IND",
+        "DISTRICT": "Maharashtra",
+        "POPULATION": 197408
+    },
+    {
+        "ID": 1222,
+        "NAME": "Tenali",
+        "COUNTYCODE": "IND",
+        "DISTRICT": "Andhra Pradesh",
+        "POPULATION": 143726
+    },
+    {
+        "ID": 1235,
+        "NAME": "Tirunelveli",
+        "COUNTYCODE": "IND",
+        "DISTRICT": "Tamil Nadu",
+        "POPULATION": 135825
+    },
+    {
+        "ID": 1256,
+        "NAME": "Alandur",
+        "COUNTYCODE": "IND",
+        "DISTRICT": "Tamil Nadu",
+        "POPULATION": 125244
+    },
+    {
+        "ID": 1279,
+        "NAME": "Neyveli",
+        "COUNTYCODE": "IND",
+        "DISTRICT": "Tamil Nadu",
+        "POPULATION": 118080
+    },
+    {
+        "ID": 1293,
+        "NAME": "Pallavaram",
+        "COUNTYCODE": "IND",
+        "DISTRICT": "Tamil Nadu",
+        "POPULATION": 111866
+    },
+    {
+        "ID": 1350,
+        "NAME": "Dehri",
+        "COUNTYCODE": "IND",
+        "DISTRICT": "Bihar",
+        "POPULATION": 94526
+    },
+    {
+        "ID": 1383,
+        "NAME": "Tabriz",
+        "COUNTYCODE": "IRN",
+        "DISTRICT": "East Azerbaidzan",
+        "POPULATION": 1191043
+    },
+    {
+        "ID": 1385,
+        "NAME": "Karaj",
+        "COUNTYCODE": "IRN",
+        "DISTRICT": "Teheran",
+        "POPULATION": 940968
+    },
+    {
+        "ID": 1508,
+        "NAME": "Bolzano",
+        "COUNTYCODE": "ITA",
+        "DISTRICT": "Trentino-Alto Adige",
+        "POPULATION": 97232
+    },
+    {
+        "ID": 1520,
+        "NAME": "Cesena",
+        "COUNTYCODE": "ITA",
+        "DISTRICT": "Emilia-Romagna",
+        "POPULATION": 89852
+    },
+    {
+        "ID": 1613,
+        "NAME": "Neyagawa",
+        "COUNTYCODE": "JPN",
+        "DISTRICT": "Osaka",
+        "POPULATION": 257315
+    },
+    {
+        "ID": 1630,
+        "NAME": "Ageo",
+        "COUNTYCODE": "JPN",
+        "DISTRICT": "Saitama",
+        "POPULATION": 209442
+    },
+    {
+        "ID": 1661,
+        "NAME": "Sayama",
+        "COUNTYCODE": "JPN",
+        "DISTRICT": "Saitama",
+        "POPULATION": 162472
+    },
+    {
+        "ID": 1681,
+        "NAME": "Omuta",
+        "COUNTYCODE": "JPN",
+        "DISTRICT": "Fukuoka",
+        "POPULATION": 142889
+    },
+    {
+        "ID": 1739,
+        "NAME": "Tokuyama",
+        "COUNTYCODE": "JPN",
+        "DISTRICT": "Yamaguchi",
+        "POPULATION": 107078
+    },
+    {
+        "ID": 1793,
+        "NAME": "Novi Sad",
+        "COUNTYCODE": "YUG",
+        "DISTRICT": "Vojvodina",
+        "POPULATION": 179626
+    },
+    {
+        "ID": 1857,
+        "NAME": "Kelowna",
+        "COUNTYCODE": "CAN",
+        "DISTRICT": "British Colombia",
+        "POPULATION": 89442
+    },
+    {
+        "ID": 1895,
+        "NAME": "Harbin",
+        "COUNTYCODE": "CHN",
+        "DISTRICT": "Heilongjiang",
+        "POPULATION": 4289800
+    },
+    {
+        "ID": 1900,
+        "NAME": "Changchun",
+        "COUNTYCODE": "CHN",
+        "DISTRICT": "Jilin",
+        "POPULATION": 2812000
+    },
+    {
+        "ID": 1913,
+        "NAME": "Lanzhou",
+        "COUNTYCODE": "CHN",
+        "DISTRICT": "Gansu",
+        "POPULATION": 1565800
+    },
+    {
+        "ID": 1947,
+        "NAME": "Changzhou",
+        "COUNTYCODE": "CHN",
+        "DISTRICT": "Jiangsu",
+        "POPULATION": 530000
+    },
+    {
+        "ID": 2070,
+        "NAME": "Dezhou",
+        "COUNTYCODE": "CHN",
+        "DISTRICT": "Shandong",
+        "POPULATION": 195485
+    },
+    {
+        "ID": 2081,
+        "NAME": "Heze",
+        "COUNTYCODE": "CHN",
+        "DISTRICT": "Shandong",
+        "POPULATION": 189293
+    },
+    {
+        "ID": 2111,
+        "NAME": "Chenzhou",
+        "COUNTYCODE": "CHN",
+        "DISTRICT": "Hunan",
+        "POPULATION": 169400
+    },
+    {
+        "ID": 2153,
+        "NAME": "Xianning",
+        "COUNTYCODE": "CHN",
+        "DISTRICT": "Hubei",
+        "POPULATION": 136811
+    },
+    {
+        "ID": 2192,
+        "NAME": "Lhasa",
+        "COUNTYCODE": "CHN",
+        "DISTRICT": "Tibet",
+        "POPULATION": 120000
+    },
+    {
+        "ID": 2193,
+        "NAME": "Lianyuan",
+        "COUNTYCODE": "CHN",
+        "DISTRICT": "Hunan",
+        "POPULATION": 118858
+    },
+    {
+        "ID": 2227,
+        "NAME": "Xingcheng",
+        "COUNTYCODE": "CHN",
+        "DISTRICT": "Liaoning",
+        "POPULATION": 102384
+    },
+    {
+        "ID": 2273,
+        "NAME": "Villavicencio",
+        "COUNTYCODE": "COL",
+        "DISTRICT": "Meta",
+        "POPULATION": 273140
+    },
+    {
+        "ID": 2384,
+        "NAME": "Tong-yong",
+        "COUNTYCODE": "KOR",
+        "DISTRICT": "Kyongsangnam",
+        "POPULATION": 131717
+    },
+    {
+        "ID": 2386,
+        "NAME": "Yongju",
+        "COUNTYCODE": "KOR",
+        "DISTRICT": "Kyongsangbuk",
+        "POPULATION": 131097
+    },
+    {
+        "ID": 2387,
+        "NAME": "Chinhae",
+        "COUNTYCODE": "KOR",
+        "DISTRICT": "Kyongsangnam",
+        "POPULATION": 125997
+    },
+    {
+        "ID": 2388,
+        "NAME": "Sangju",
+        "COUNTYCODE": "KOR",
+        "DISTRICT": "Kyongsangbuk",
+        "POPULATION": 124116
+    },
+    {
+        "ID": 2406,
+        "NAME": "Herakleion",
+        "COUNTYCODE": "GRC",
+        "DISTRICT": "Crete",
+        "POPULATION": 116178
+    },
+    {
+        "ID": 2440,
+        "NAME": "Monrovia",
+        "COUNTYCODE": "LBR",
+        "DISTRICT": "Montserrado",
+        "POPULATION": 850000
+    },
+    {
+        "ID": 2462,
+        "NAME": "Lilongwe",
+        "COUNTYCODE": "MWI",
+        "DISTRICT": "Lilongwe",
+        "POPULATION": 435964
+    },
+    {
+        "ID": 2505,
+        "NAME": "Taza",
+        "COUNTYCODE": "MAR",
+        "DISTRICT": "Taza-Al Hoceima-Taou",
+        "POPULATION": 92700
+    },
+    {
+        "ID": 2555,
+        "NAME": "Xalapa",
+        "COUNTYCODE": "MEX",
+        "DISTRICT": "Veracruz",
+        "POPULATION": 390058
+    },
+    {
+        "ID": 2602,
+        "NAME": "Ocosingo",
+        "COUNTYCODE": "MEX Chiapas",
+        "POPULATION": 171495
+    },
+    {
+        "ID": 2609,
+        "NAME": "Nogales",
+        "COUNTYCODE": "MEX",
+        "DISTRICT": "Sonora",
+        "POPULATION": 159103
+    },
+    {
+        "ID": 2670,
+        "NAME": "San Pedro Cholula",
+        "COUNTYCODE": "MEX",
+        "DISTRICT": "Puebla",
+        "POPULATION": 99734
+    },
+    {
+        "ID": 2689,
+        "NAME": "Palikir",
+        "COUNTYCODE": "FSM",
+        "DISTRICT": "Pohnpei",
+        "POPULATION": 8600
+    },
+    {
+        "ID": 2706,
+        "NAME": "Tete",
+        "COUNTYCODE": "MOZ",
+        "DISTRICT": "Tete",
+        "POPULATION": 101984
+    },
+    {
+        "ID": 2716,
+        "NAME": "Sittwe (Akyab)",
+        "COUNTYCODE": "MMR",
+        "DISTRICT": "Rakhine",
+        "POPULATION": 137600
+    },
+    {
+        "ID": 2922,
+        "NAME": "Carolina",
+        "COUNTYCODE": "PRI",
+        "DISTRICT": "Carolina",
+        "POPULATION": 186076
+    },
+    {
+        "ID": 2967,
+        "NAME": "Grudziadz",
+        "COUNTYCODE": "POL",
+        "DISTRICT": "Kujawsko-Pomorskie",
+        "POPULATION": 102434
+    },
+    {
+        "ID": 2972,
+        "NAME": "Malabo",
+        "COUNTYCODE": "GNQ",
+        "DISTRICT": "Bioko",
+        "POPULATION": 40000
+    },
+    {
+        "ID": 3073,
+        "NAME": "Essen",
+        "COUNTYCODE": "DEU",
+        "DISTRICT": "Nordrhein-Westfalen",
+        "POPULATION": 599515
+    },
+    {
+        "ID": 3169,
+        "NAME": "Apia",
+        "COUNTYCODE": "WSM",
+        "DISTRICT": "Upolu",
+        "POPULATION": 35900
+    },
+    {
+        "ID": 3198,
+        "NAME": "Dakar",
+        "COUNTYCODE": "SEN",
+        "DISTRICT": "Cap-Vert",
+        "POPULATION": 785071
+    },
+    {
+        "ID": 3253,
+        "NAME": "Hama",
+        "COUNTYCODE": "SYR",
+        "DISTRICT": "Hama",
+        "POPULATION": 343361
+    },
+    {
+        "ID": 3288,
+        "NAME": "Luchou",
+        "COUNTYCODE": "TWN",
+        "DISTRICT": "Taipei",
+        "POPULATION": 160516
+    },
+    {
+        "ID": 3309,
+        "NAME": "Tanga",
+        "COUNTYCODE": "TZA",
+        "DISTRICT": "Tanga",
+        "POPULATION": 137400
+    },
+    {
+        "ID": 3353,
+        "NAME": "Sousse",
+        "COUNTYCODE": "TUN",
+        "DISTRICT": "Sousse",
+        "POPULATION": 145900
+    },
+    {
+        "ID": 3377,
+        "NAME": "Kahramanmaras",
+        "COUNTYCODE": "TUR",
+        "DISTRICT": "Kahramanmaras",
+        "POPULATION": 245772
+    },
+    {
+        "ID": 3430,
+        "NAME": "Odesa",
+        "COUNTYCODE": "UKR",
+        "DISTRICT": "Odesa",
+        "POPULATION": 1011000
+    },
+    {
+        "ID": 3581,
+        "NAME": "St Petersburg",
+        "COUNTYCODE": "RUS",
+        "DISTRICT": "Pietari",
+        "POPULATION": 4694000
+    },
+    {
+        "ID": 3770,
+        "NAME": "Hanoi",
+        "COUNTYCODE": "VNM",
+        "DISTRICT": "Hanoi",
+        "POPULATION": 1410000
+    },
+    {
+        "ID": 3815,
+        "NAME": "El Paso",
+        "COUNTYCODE": "USA",
+        "DISTRICT": "Texas",
+        "POPULATION": 563662
+    },
+    {
+        "ID": 3878,
+        "NAME": "Scottsdale",
+        "COUNTYCODE": "USA",
+        "DISTRICT": "Arizona",
+        "POPULATION": 202705
+    },
+    {
+        "ID": 3965,
+        "NAME": "Corona",
+        "COUNTYCODE": "USA",
+        "DISTRICT": "California",
+        "POPULATION": 124966
+    },
+    {
+        "ID": 3973,
+        "NAME": "Concord",
+        "COUNTYCODE": "USA",
+        "DISTRICT": "California",
+        "POPULATION": 121780
+    },
+    {
+        "ID": 3977,
+        "NAME": "Cedar Rapids",
+        "COUNTYCODE": "USA",
+        "DISTRICT": "Iowa",
+        "POPULATION": 120758
+    },
+    {
+        "ID": 3982,
+        "NAME": "Coral Springs",
+        "COUNTYCODE": "USA",
+        "DISTRICT": "Florida",
+        "POPULATION": 117549
+    },
+    {
+        "ID": 4054,
+        "NAME": "Fairfield",
+        "COUNTYCODE": "USA",
+        "DISTRICT": "California",
+        "POPULATION": 92256
+    },
+    {
+        "ID": 4058,
+        "NAME": "Boulder",
+        "COUNTYCODE": "USA",
+        "DISTRICT": "Colorado",
+        "POPULATION": 91238
+    },
+    {
+        "ID": 4061,
+        "NAME": "Fall River",
+        "COUNTYCODE": "USA",
+        "DISTRICT": "Massachusetts",
+        "POPULATION": 90555
+    }
+]
